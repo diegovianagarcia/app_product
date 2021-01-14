@@ -1,0 +1,12 @@
+<div *ngFor="let product of products" class="col-12">
+    <div class="card" style="margin: 2%">
+        <div class="card-body">
+            <h4 class="card-title">{{ product.name }}</h4>
+            <p class="card-text text-justify">{{product.description}}</p>
+            <div *ngIf="(user$ | async) as user;">
+                <button routerLink="/p/update/{{product.id}}" class="btn btn-light btn-block">Edit</button>
+                <button (click)="delete(product.id)" class="btn btn-secondary btn-block">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<header class="fixed-top">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">Products</a>
+        <div class="container">
+            <a [routerLink]="['']">
+                <i class="fa fa-home fa-lg ml-2 mr-2 btn-light" aria-hidden="true"></i>
+            </a>
+            <a *ngIf="(user$ | async) as user" [routerLink]="['p/add']">
+                <i class="fa fa-plus-circle fa-lg ml-2 mr-2 btn-light" aria-hidden="true"></i>
+            </a>
+
+            <div *ngIf="(user$ | async) as user; else login">
+                <i class="fa fa-user-circle mr-1"></i>
+                <a class="mr-1">{{ user.username}}</a>
+                <a class="mr-1" (click)="logout()">(Logout)</a>
+            </div>
+
+            <ng-template #login>
+                <span class="navbar-text">
+                    <a [routerLink]="['/login']">Please, login!</a>
+                </span>
+            </ng-template>
+        </div>
+    </nav>
+</header>

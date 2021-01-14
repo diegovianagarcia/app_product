@@ -1,27 +1,47 @@
-# Product
+# Front-End Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+O App consiste na necessidade de atender um pequeno comércio com um sistema simples de controle de produtos:
 
-## Development server
+Criar um app com as seguintes telas:
+ - Autenticação, pública;
+ - Lista de produtos, com acesso restrito;
+ - Criação de produtos, com acesso restrito;
+ - Edição de produtos, com acesso restrito; 
+ - Modal de exclusão, com acesso restrito;
+ - Tela exibindo apenas produtos ativados, pública;
+ - Utilizar como backend uma API REST JSON com autenticação JWT 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ ## Tecnologias utilizadas
 
-## Code scaffolding
+Para executar o projeto, será necessário instalar/usar os seguintes programas:
+* [Node.js](https://nodejs.org/en/download/)
+* [NPM](https://www.npmjs.com/)
+* [Angular 6](https://angular.io/)
+* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/download/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Desenvolvimento
+* **Backend**: Consumir uma API REST JSON com autenticação JWT disponível em https://bravosul-app.herokuapp.com/
 
-## Build
+* **Website**: O frontend do site foi criado usando o Angular 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Instalação 
 
-## Running unit tests
+Para executar esse repositório baixe-o para sua maquina ou de um `Git Clone`.
+- `$ npm install` esse comando ira instalar todos os módulos necessários ao Angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Ambiente de desenvolvimento e produção
+### Configurar variáveis de ambiente
+No arquivo `environments/environments.ts e environments.prod`
+- apiURL - Endereco base da API
 
-## Running end-to-end tests
+### Executar o App
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- `$ ng serve --open ` irá iniciar o servidor em `localhost:4200/`
 
-## Further help
+### Build de produção
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- `$ ng build --prod` irá fazer o build na pasta  `dist/`
+
+### Autenticação
+- username: dev@bravosul.com.br
+- password: Brvsl@2020
