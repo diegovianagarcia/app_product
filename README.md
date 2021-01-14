@@ -2,7 +2,7 @@
 
 O App consiste na necessidade de atender um pequeno comércio com um sistema simples de controle de produtos:
 
-Criar um app com as seguintes telas:
+Funcionalidades:
  - Autenticação, pública;
  - Lista de produtos, com acesso restrito;
  - Criação de produtos, com acesso restrito;
@@ -19,14 +19,13 @@ Para executar o projeto, será necessário instalar/usar os seguintes programas:
 * [Angular 6](https://angular.io/)
 * [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/download/)
 
-## Desenvolvimento
-* **Backend**: Consumir uma API REST JSON com autenticação JWT disponível em https://bravosul-app.herokuapp.com/
+## Backend
+API REST JSON com autenticação JWT disponível em https://bravosul-app.herokuapp.com/
 
-* **Website**: O frontend do site foi criado usando o Angular 
 
 ## Instalação 
 
-Para executar esse repositório baixe-o para sua maquina ou de um `Git Clone`.
+Para executar esse projeto baixe-o clone o repositório. Na pasta raiz:
 - `$ npm install` esse comando ira instalar todos os módulos necessários ao Angular
 
 ## Ambiente de desenvolvimento e produção
@@ -36,7 +35,7 @@ No arquivo `environments/environments.ts e environments.prod`
 
 ### Executar o App
 
-- `$ ng serve --open ` irá iniciar o servidor em `localhost:4200/`
+- `$ ng seve --open ` irá iniciar o servidor em `localhost:4200/` 
 
 ### Build de produção
 
